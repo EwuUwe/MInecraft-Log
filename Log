@@ -1,0 +1,65 @@
+[09:47:06] [Server thread/INFO]: Stopping server
+[09:47:06] [Server thread/INFO]: Saving players
+[09:47:06] [SIGCONT handler/WARN]: Exception in thread "SIGCONT handler" java.io.IOError: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractPosixTerminal.getAttributes(AbstractPosixTerminal.java:46)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractTerminal.enterRawMode(AbstractTerminal.java:117)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.reader.impl.LineReaderImpl.handleSignal(LineReaderImpl.java:1043)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractTerminal.raise(AbstractTerminal.java:81)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.PosixSysTerminal.lambda$handle$1(PosixSysTerminal.java:65)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.utils.Signals.lambda$register$1(Signals.java:52)
+[09:47:06] [SIGCONT handler/WARN]: 	at com.sun.proxy.$Proxy18.handle(Unknown Source)
+[09:47:06] [SIGCONT handler/WARN]: 	at jdk.unsupported/sun.misc.Signal$InternalMiscHandler.handle(Signal.java:198)
+[09:47:06] [SIGCONT handler/WARN]: 	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:220)
+[09:47:06] [SIGCONT handler/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:834)
+[09:47:06] [SIGCONT handler/WARN]: Caused by: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.utils.ExecHelper.exec(ExecHelper.java:42)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.ExecPty.doGetConfig(ExecPty.java:175)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.ExecPty.getAttr(ExecPty.java:87)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractPosixTerminal.getAttributes(AbstractPosixTerminal.java:44)
+[09:47:06] [SIGCONT handler/WARN]: 	... 9 more
+[09:47:06] [SIGCONT handler/WARN]: Exception in thread "SIGCONT handler" java.io.IOError: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractPosixTerminal.getAttributes(AbstractPosixTerminal.java:46)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractTerminal.enterRawMode(AbstractTerminal.java:117)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.reader.impl.LineReaderImpl.handleSignal(LineReaderImpl.java:1043)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractTerminal.raise(AbstractTerminal.java:81)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.PosixSysTerminal.lambda$handle$1(PosixSysTerminal.java:65)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.utils.Signals.lambda$register$1(Signals.java:52)
+[09:47:06] [SIGCONT handler/WARN]: 	at com.sun.proxy.$Proxy18.handle(Unknown Source)
+[09:47:06] [SIGCONT handler/WARN]: 	at jdk.unsupported/sun.misc.Signal$InternalMiscHandler.handle(Signal.java:198)
+[09:47:06] [SIGCONT handler/WARN]: 	at java.base/jdk.internal.misc.Signal$1.run(Signal.java:220)
+[09:47:06] [SIGCONT handler/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:834)
+[09:47:06] [SIGCONT handler/WARN]: Caused by: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.utils.ExecHelper.exec(ExecHelper.java:42)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.ExecPty.doGetConfig(ExecPty.java:175)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.ExecPty.getAttr(ExecPty.java:87)
+[09:47:06] [SIGCONT handler/WARN]: 	at org.jline.terminal.impl.AbstractPosixTerminal.getAttributes(AbstractPosixTerminal.java:44)
+[09:47:06] [SIGCONT handler/WARN]: 	... 9 more
+[09:47:06] [Server console handler/ERROR]: Caught previously unhandled exception :
+java.io.IOError: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+	at org.jline.terminal.impl.AbstractPosixTerminal.setAttributes(AbstractPosixTerminal.java:54) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:650) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.reader.impl.LineReaderImpl.readLine(LineReaderImpl.java:418) ~[patched_1.16.3.jar:git-Paper-244]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:158) ~[patched_1.16.3.jar:git-Paper-244]
+	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:141) ~[patched_1.16.3.jar:git-Paper-244]
+	at net.minecraft.server.v1_16_R2.DedicatedServer$1.run(DedicatedServer.java:64) ~[patched_1.16.3.jar:git-Paper-244]
+Caused by: java.io.IOException: Error executing 'stty -a': stty: 'standard input': Input/output error
+	at org.jline.utils.ExecHelper.exec(ExecHelper.java:42) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.terminal.impl.ExecPty.doGetConfig(ExecPty.java:175) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.terminal.impl.ExecPty.getAttr(ExecPty.java:87) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.terminal.impl.ExecPty.doSetAttr(ExecPty.java:93) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.terminal.impl.AbstractPty.setAttr(AbstractPty.java:29) ~[patched_1.16.3.jar:git-Paper-244]
+	at org.jline.terminal.impl.AbstractPosixTerminal.setAttributes(AbstractPosixTerminal.java:52) ~[patched_1.16.3.jar:git-Paper-244]
+	... 5 more
+[09:47:06] [Server thread/INFO]: Saving worlds
+[09:47:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[09:47:06] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09:47:06] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[09:47:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09:47:07] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[09:47:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09:47:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[09:47:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[09:47:07] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[09:47:07] [Server thread/INFO]: Flushing Chunk IO
+[09:47:07] [Server thread/INFO]: Closing Thread Pool
+[09:47:07] [Server thread/INFO]: Closing Server
